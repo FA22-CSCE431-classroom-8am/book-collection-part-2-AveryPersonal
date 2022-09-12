@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-11T21:54:37+00:00">2022-09-11T21:54:37+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-12T15:13:36+00:00">2022-09-12T15:13:36+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -172,7 +172,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ab0e0f2c94f8dc1ffb166037e355d174df0afe36" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
@@ -413,7 +413,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ab0e0f2c94f8dc1ffb166037e355d174df0afe36" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">2</td>
             <td class="cell--number">2</td>
             <td class="cell--number">0</td>
@@ -1686,7 +1686,7 @@
 
             
 
-            <code class="ruby">      params.require(:book).permit(:title)</code>
+            <code class="ruby">      params.require(:book).permit(:title,:author,:price,:published_date)</code>
           </li>
         </div>
       
@@ -2108,18 +2108,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby">	#validates :title,:author,:price,:published_date, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">	validates :title, presence: true</code>
+            <code class="ruby">	validates :title,:author,:price, presence: true</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 

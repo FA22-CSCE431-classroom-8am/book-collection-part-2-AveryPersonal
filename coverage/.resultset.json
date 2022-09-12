@@ -16,6 +16,7 @@
       "/csce431/Desktop/2022Fall/CSCE431/DockerLab/test_app/app/models/book.rb": {
         "lines": [
           1,
+          null,
           1,
           null
         ]
@@ -151,6 +152,6 @@
         }
       }
     },
-    "timestamp": 1662933277
+    "timestamp": 1662995616
   }
 }
