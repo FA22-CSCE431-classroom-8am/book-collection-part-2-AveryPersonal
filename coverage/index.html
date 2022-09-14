@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-12T15:13:36+00:00">2022-09-12T15:13:36+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-09-14T03:20:50+00:00">2022-09-14T03:20:50+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  51.85%
+  53.57%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.54
+         0.55
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>54</b> relevant lines,
-    <span class="green"><b>28</b> lines covered</span> and
+    <b>56</b> relevant lines,
+    <span class="green"><b>30</b> lines covered</span> and
     <span class="red"><b>26</b> lines missed. </span>
     (<span class="red">
-  51.85%
+  53.57%
 </span>
 )
   </div>
@@ -172,9 +172,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ab0e0f2c94f8dc1ffb166037e355d174df0afe36" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -372,8 +372,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>4</b> relevant lines,
-    <span class="green"><b>4</b> lines covered</span> and
+    <b>6</b> relevant lines,
+    <span class="green"><b>6</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -413,9 +413,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ab0e0f2c94f8dc1ffb166037e355d174df0afe36" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">9</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">2</td>
+            <td class="cell--number">4</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -2084,8 +2084,8 @@
     
 
     <div class="t-line-summary">
-      <b>2</b> relevant lines.
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>4</b> relevant lines.
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -2108,13 +2108,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">	#validates :title,:author,:price,:published_date, presence: true</code>
+            
+
+            <code class="ruby">	validates :title, presence: true</code>
           </li>
         </div>
       
@@ -2125,12 +2125,67 @@
 
             
 
-            <code class="ruby">	validates :title,:author,:price, presence: true</code>
+            <code class="ruby">	validates:author,:published_date, presence: true</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">	validates :price, numericality: { greater_than_or_equal_to: 0 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">	#validates_date :published_date, date: {before: Date.today}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">	#validates :published_date, timeliness: { on_or_before: lambda { Date.current }, type: :date }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">	#validates :title,:author,:price, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
